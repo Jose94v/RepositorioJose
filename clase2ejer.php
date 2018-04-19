@@ -46,6 +46,8 @@ $ContraseniaDeUsuario='';
 
 if ($nombreDeUsuario==="admin" && $ContraseniaDeUsuario==="1234") {
 	echo "Bienvenido!";
+}else{
+	echo "Error en el login";
 }
 
 
