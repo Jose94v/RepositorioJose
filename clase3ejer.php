@@ -79,3 +79,77 @@ while($caras<=5){
 	echo "<br>";
 
   ?>
+
+  <?php 
+echo "<br>";
+echo "-For-";
+echo "<br>";
+  	$nombres=[];
+  	$nombres[]="Miguel";
+  	$nombres[]="Ana";
+  	$nombres[]="Julian";
+  	$nombres[]="Nico";
+  	$nombres[]='Laura';
+
+for ($i=0; $i < 5 ; $i++) {
+echo "<br>";
+echo $nombres[$i];
+
+}
+   ?>
+
+<?php 
+echo "<br>";
+echo "<br>";
+echo "-While-";
+echo "<br>";
+$i=0;
+$nombres=[];
+  	$nombres[]="Miguel";
+  	$nombres[]="Ana";
+  	$nombres[]="Julian";
+  	$nombres[]="Nico";
+  	$nombres[]='Laura';
+while ( $i<5) {
+	echo "<br>";
+	echo $nombres[$i];
+	$i++;
+}
+ ?>
+
+ <?php 
+echo "<br>";
+echo "<br>";
+echo "-Do While-";
+echo "<br>";
+$i=0;
+$nombres=[];
+  	$nombres[]="Miguel";
+  	$nombres[]="Ana";
+  	$nombres[]="Julian";
+  	$nombres[]="Nico";
+  	$nombres[]='Laura';
+do {
+	echo "<br>";
+	echo $nombres[$i];
+	$i++;
+	}while ($i<5) 
+	?>
+
+	<?php 
+echo "<br>";
+echo "<br>";
+echo "-Foreach-";
+echo "<br>";
+echo "<br>";
+$nombres=[];
+  	$nombres[]="Miguel";
+  	$nombres[]="Ana";
+  	$nombres[]="Julian";
+  	$nombres[]="Nico";
+  	$nombres[]='Laura';
+foreach ($nombres as $nombre) {
+	echo $nombre ."<br>";
+}
+
+	 ?>
