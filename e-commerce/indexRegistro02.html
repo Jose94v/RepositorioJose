@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <title>Registrarse</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  </head>
+  <body>
+  <header>
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><img src="imagenes/barra1.png" height="30" width="30"></label>
+  
+    <nav class="menu">
+      <ul>
+        <li><a href="index2.html">Inicio</a></li>
+        <li><a href="indexRegistro02.html">Registrarse</a></li>
+        <li><a href="indexIngreso01.html">Ingresar</a></li>
+        <li><a href="indexPreguntas.html">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+    <h1>Crear cuenta</h1>
+    <div class="contenedorForm">
+    <form class="registro" action="archivo.php" method="POST">
+      <fieldset class="datosPersonales" >
+        <div class="transparencia">
+          <legend><b>Tus Datos</b></legend>
+          <p>
+    				<label for="nombre">Nombre</label>
+    				<input type="text" name="nombre" id="nombre" value="" required>
+    			</p>
+          <p>
+            <label for="nombre">Apellido</label>
+            <input type="text" name="apellido" id="apellido" value="" required>
+          </p>
+          <p>
+    				<label>Fecha de nacimiento</label>
+    				<input type="date" name="fecha_nacimiento" min="1920-04-01" max="2017-04-30">
+    			</p>
+          <p>
+    				<label>E-Mail</label>
+    				<input type="email" name="direccion_email" required>
+    			</p>
+    			<p>
+    				<label>Contraseña</label>
+    				<input type="password" name="contraseña">
+    			</p>
+          <p>
+    				<label>Confirmar contraseña</label>
+    				<input type="password" name="contraseñaConfirm">
+    			</p>
+        </div>
+      </fieldset>
+      <fieldset class="datosDeBanda">
+        <div class="transparencia">
+      <legend><b>Datos de tu banda</b></legend>
+        <p>
+  				<label for="nombre">Nombre de la Banda</label>
+  				<input type="text" name="nombre" id="nombreBanda" value="" required>
+  			</p>
+        <p>
+          <label>Estilos de banda</label>
+          <br>
+          <input type="checkbox" name="estilo_banda" id="estilo_banda_rock"><label for="dia_semana_lunes">Rock</label>
+          <input type="checkbox" name="estilo_banda" id="estilo_banda_pop"><label for="dia_semana_martes">Pop</label>
+          <input type="checkbox" name="estilo_banda" id="estilo_banda_blues"><label for="dia_semana_miercoles">Blues</label>
+          <input type="checkbox" name="estilo_banda" id="estilo_banda_progresiva"><label for="dia_semana_jueves">Progresiva</label>
+          <input type="checkbox" name="estilo_banda" id="estilo_banda_electronica"><label for="dia_semana_viernes">Electrónica</label>
+          <input type="checkbox" name="estilo_banda" id="estilo_banda_cumbia"><label for="dia_semana_viernes">Cumbia</label>
+        </p>
+        <p>
+    				<label>Provincia</label>
+    				<select name="provincia">
+
+    						<option value="ca">CABA</option>
+    						<option value="ba">Bs As</option>
+    						<option value="co">Córdoba</option>
+    				</select>
+    			</p>
+      </fieldset>
+      <p>
+  			<button type="submit">Enviar información</button>
+  			<button type="reset">Reiniciar</button>
+  		</p>
+  </div>
+    </form>
+
+  </body>
+</html>
