@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<title>My Own Gallery bitches!!!</title>
-		<link rel="stylesheet" href="assets/css/main.css">
-	</head>
-	<body>
-		<!-- FORBIDDEN: Don't touch the HTML structure -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fetch</title>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-7">
+				<h1>Pedidos asincrónicos con Fetch</h1>
+				<form action="" method="get">
+					<div class="form-group">
+						<label for="pais">País:</label>
+						<select class="form-control" name="combo-paises" id="pais"></select>
+					</div>
 
-		<!-- Large-Image-Container -->
-		<div class="img-container"></div>
+					<div class="form-group">
+						<label for="region">Region:</label>
+						<select class="form-control" name="combo-regiones" id="region"></select>
+					</div>
 
-		<!-- Thumbnails-Image-List -->
-		<ul class="img-thumbnails">
-			<li><img src="assets/images/img-01.jpg" alt="01"></li>
-			<li><img src="assets/images/img-02.jpg" alt="02"></li>
-			<li><img src="assets/images/img-03.jpg" alt="03"></li>
-			<li><img src="assets/images/img-04.jpg" alt="04"></li>
-			<li><img src="assets/images/img-05.jpg" alt="05"></li>
-			<li><img src="assets/images/img-06.jpg" alt="06"></li>
-		</ul>
+					<div class="form-group">
+						<label for="ciudad">Ciudad:</label>
+						<select class="form-control" name="combo-ciudades" id="ciudad"></select>
+					</div>
 
-		<!-- app.js -->
-		<script src="assets/js/app.js"></script>
-	</body>
+					<button class="btn btn-success">ENVIAR</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
 </html>
